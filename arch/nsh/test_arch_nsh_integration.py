@@ -267,6 +267,7 @@ class TestCat:
 
 
 @pytest.mark.cmd_check("cmd_cd")
+@pytest.mark.dep_config("CONFIG_FS_TMPFS")
 class TestCd:
     def test_cd001(self):
         fs = "/tmp"
@@ -365,6 +366,7 @@ class TestCd:
 
 
 @pytest.mark.cmd_check("cmd_echo")
+@pytest.mark.dep_config("CONFIG_FS_TMPFS")
 class TestEcho:
     def test_echo001(self):
         fs = "/tmp"
@@ -465,6 +467,7 @@ class TestLs:
 
 
 @pytest.mark.cmd_check("cmd_rm")
+@pytest.mark.dep_config("CONFIG_FS_TMPFS")
 class TestRm:
     def test_rm001(self):
         fs = "/tmp"
@@ -496,6 +499,7 @@ class TestRm:
 
 
 @pytest.mark.cmd_check("cmd_mkdir")
+@pytest.mark.dep_config("CONFIG_FS_TMPFS")
 class TestMkdir:
     def test_mkdir001(self):
         fs = "/tmp"
@@ -526,6 +530,7 @@ class TestMkdir:
 
 
 @pytest.mark.cmd_check("cmd_rmdir")
+@pytest.mark.dep_config("CONFIG_FS_TMPFS")
 class TestRmdir:
     def test_rmdir001(self):
         fs = "/tmp"
@@ -571,6 +576,7 @@ class TestRmdir:
 
 
 @pytest.mark.cmd_check("cmd_cp")
+@pytest.mark.dep_config("CONFIG_FS_TMPFS")
 class TestCp:
     def test_cp001(self):
         fs = "/tmp"
@@ -713,6 +719,7 @@ class TestTest:
 
 
 @pytest.mark.cmd_check("cmd_dirname")
+@pytest.mark.dep_config("CONFIG_FS_TMPFS")
 class TestDirname:
     def test_dirname(self):
         fs = "/tmp"
@@ -731,6 +738,7 @@ class TestDirname:
 
 
 @pytest.mark.cmd_check("cmd_basename")
+@pytest.mark.dep_config("CONFIG_FS_TMPFS")
 class TestBasename:
     def test_basename(self):
         fs = "/tmp"
@@ -804,6 +812,7 @@ class TestUname:
 
 
 @pytest.mark.cmd_check("cmd_dd")
+@pytest.mark.dep_config("CONFIG_FS_TMPFS")
 class TestDd:
 
     def test_dd01(self):
@@ -897,6 +906,7 @@ class TestEnv:
 
 
 @pytest.mark.cmd_check("cmd_mv")
+@pytest.mark.dep_config("CONFIG_FS_TMPFS")
 class TestMv:
     def test_mv(self):
         fs = "/tmp"
@@ -911,6 +921,7 @@ class TestMv:
 
 
 @pytest.mark.cmd_check("cmd_pwd")
+@pytest.mark.dep_config("CONFIG_FS_TMPFS")
 class TestPwd:
     def test_pwd(self):
         fs = "/tmp"
@@ -925,6 +936,7 @@ class TestPwd:
 
 
 @pytest.mark.cmd_check("cmd_hexdump")
+@pytest.mark.dep_config("CONFIG_FS_TMPFS")
 class TestHexdump:
     def test_hexdump(self):
         fs = "/tmp"
@@ -957,6 +969,7 @@ class TestMw:
 
 
 @pytest.mark.cmd_check("cmd_sh")
+@pytest.mark.dep_config("CONFIG_FS_TMPFS")
 class TestSh:
     def test_sh(self):
         fs = "/tmp"
@@ -988,6 +1001,7 @@ class TestSh:
 
 
 @pytest.mark.cmd_check("cmd_gt")
+@pytest.mark.dep_config("CONFIG_FS_TMPFS")
 class TestGt:
     def test_gt(self):
         fs = "/tmp"
