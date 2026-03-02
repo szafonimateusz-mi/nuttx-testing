@@ -76,7 +76,8 @@ def test_osperf():
             """step-3: Analyze logs and generate CSV files based on performance metrics data"""
             logging.info(f"Step-3: create performance csv file")
 
-            result_val = os.path.join(pytest.result_dir, "test_osperf.console.txt")
+            tmp = pytest.result_dir + "/ntfc-sim/main/"
+            result_val = os.path.join(tmp, "test_osperf.console.txt")
             logging.info(f"result_val: {pytest.result_dir}")
             if process_data._wait_for_file(result_val):
 
