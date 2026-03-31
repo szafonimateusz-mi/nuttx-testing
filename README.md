@@ -1,3 +1,5 @@
+# Moved to https://github.com/apache/nuttx-ntfc-testing
+
 # nuttx-testing
 
 This repository contains test cases compatible with the NTFC tool for
